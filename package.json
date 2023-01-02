@@ -1,7 +1,7 @@
 {
   "name": "imdb-fe",
   "version": "0.1.0",
-  "homepage":"https://opulence-singh.github.io/IMDB"
+  "homepage":"https://opulence-singh.github.io/IMDB",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

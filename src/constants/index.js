@@ -1,0 +1,1 @@
+export const PAGE_TITLE = {"popular": "POPULAR", "top_rated": "TOP RATED", "upcoming": "UPCOMING"}

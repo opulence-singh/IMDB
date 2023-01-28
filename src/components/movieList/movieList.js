@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react"
 import "./movieList.css"
+import {PAGE_TITLE} from "../../constants"
+
 import { useParams } from "react-router-dom"
 import Cards from "../card/card"
 
@@ -7,7 +9,7 @@ const MovieList = () => {
     
     const [movieList, setMovieList] = useState([])
     const {type} = useParams()
-
+    
     useEffect(() => {
         getData()
     }, [])
@@ -24,7 +26,7 @@ const MovieList = () => {
 
     return (
         <div className="movie__list">
-            <h2 className="list__title">{(type ? type : "POPULAR").toUpperCase()}</h2>
+            <h2 className="list__title">{(type ? PAGE_TITLE[type] : "POPULAR")?.toUpperCase()}</h2>
             <div className="list__cards">
                 {
                     movieList.map(movie => (
